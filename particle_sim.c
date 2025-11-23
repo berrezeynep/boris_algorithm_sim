@@ -88,7 +88,7 @@ T=w_c*dt/2 */
 
 int main(){
     //output file
-    FILE *output_file = fopen("trajectory_boris.dat","w");
+    FILE *output_file = fopen("trajectory_boris2.dat","w");
     if (output_file== NULL ){
         printf("Couldn't open the file \n");
         return 1;
@@ -96,7 +96,7 @@ int main(){
     //initialize
     Particle electron ={
         .x = 0.0, .y = 0.0, .z = 0.0,
-        .vx = 0.1, .vy = 1.0, .vz = 0.0, // movement in y direction
+        .vx = 0.1, .vy = 1.0, .vz = 0.5, // movement in y direction
         .q = -1.0, .m = 1.0 // set to 1
     };
     // for python plot
